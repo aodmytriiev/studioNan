@@ -49,8 +49,8 @@ export default function FeaturedProjectSection() {
         {/* Floor Plan */}
         <div className="mb-20">
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Floor Plan</h3>
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="space-y-6">
+          <div className="max-w-6xl mx-auto mb-8">
+            <div className="grid lg:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <img 
                   src={floorPlan} 
