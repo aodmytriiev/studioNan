@@ -108,7 +108,7 @@ export default function ContactSection() {
             <div>
               <h4 className="text-lg font-semibold text-charcoal mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="https://instagram.com/stusio.nan__" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
+                <a href="https://instagram.com/studio.nan__" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a href="#" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
