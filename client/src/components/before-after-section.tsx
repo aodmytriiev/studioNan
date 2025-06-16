@@ -15,49 +15,70 @@ export default function FeaturedProjectSection() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-          <div>
-            <img 
-              src={retreatRoom1} 
-              alt="Never Too Small - Retreat room with natural wood and glass panels" 
-              className="rounded-lg shadow-lg w-full h-auto" 
-            />
-          </div>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4">Project Details</h3>
-              <div className="space-y-3 text-medium-gray">
-                <div><span className="font-semibold text-charcoal">Size:</span> 708 square feet</div>
-                <div><span className="font-semibold text-charcoal">Clients:</span> Couple in their 30s</div>
-                <div><span className="font-semibold text-charcoal">Style:</span> Japandi-Scandinavian fusion</div>
-                <div><span className="font-semibold text-charcoal">Focus:</span> Natural materials, cozy retreat spaces</div>
+        {/* Project Overview */}
+        <div className="mb-16">
+          <div className="space-y-6 mb-12">
+            <h3 className="text-2xl font-playfair font-bold text-charcoal text-center">Project Overview</h3>
+            <div className="grid md:grid-cols-4 gap-6 max-w-3xl mx-auto text-center">
+              <div className="space-y-2">
+                <div className="font-semibold text-charcoal">Size</div>
+                <div className="text-medium-gray">708 sq ft</div>
+              </div>
+              <div className="space-y-2">
+                <div className="font-semibold text-charcoal">Clients</div>
+                <div className="text-medium-gray">Couple in 30s</div>
+              </div>
+              <div className="space-y-2">
+                <div className="font-semibold text-charcoal">Style</div>
+                <div className="text-medium-gray">Japandi-Scandinavian</div>
+              </div>
+              <div className="space-y-2">
+                <div className="font-semibold text-charcoal">Focus</div>
+                <div className="text-medium-gray">Natural Materials</div>
               </div>
             </div>
-            <p className="text-lg text-medium-gray leading-relaxed">
-              This intimate retreat room showcases our philosophy of creating cozy, natural environments. The space features warm wood framing, abundant natural light through skylights, and carefully selected furniture that embodies midcentury modern simplicity.
+            <p className="text-lg text-medium-gray leading-relaxed max-w-4xl mx-auto text-center">
+              This compact home demonstrates our expertise in small space design, featuring a serene retreat room that maximizes natural light and incorporates warm wood elements with minimalist furniture for comfortable, mindful living.
             </p>
           </div>
         </div>
-        
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6 order-2 lg:order-1">
-            <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4">Design Philosophy</h3>
-            <p className="text-lg text-medium-gray leading-relaxed">
-              The retreat room demonstrates our approach to small space living - maximizing natural light, incorporating organic materials, and creating multifunctional spaces that promote wellbeing and mindfulness.
-            </p>
-            <div className="space-y-2 text-medium-gray">
-              <div>• Natural wood frames and warm tones</div>
-              <div>• Strategic use of glass for openness</div>
-              <div>• Minimalist furniture with clean lines</div>
-              <div>• Integration of plants for biophilic design</div>
+
+        {/* Retreat Room Photos */}
+        <div>
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Retreat Room</h3>
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <div className="space-y-4">
+              <img 
+                src={retreatRoom1} 
+                alt="Never Too Small - Retreat room with natural wood and glass panels" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Natural wood framing with glass panels and skylight</p>
+            </div>
+            <div className="space-y-4">
+              <img 
+                src={retreatRoom2} 
+                alt="Never Too Small - Alternative view of retreat room showing natural lighting" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Alternative view showcasing natural lighting and minimalist furniture</p>
             </div>
           </div>
-          <div className="order-1 lg:order-2">
-            <img 
-              src={retreatRoom2} 
-              alt="Never Too Small - Alternative view of retreat room showing natural lighting" 
-              className="rounded-lg shadow-lg w-full h-auto" 
-            />
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Design Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Warm wood frames creating visual warmth</div>
+                <div>• Strategic glass panels for openness</div>
+                <div>• Skylight maximizing natural light</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Minimalist furniture with clean lines</div>
+                <div>• Integration of plants for biophilic design</div>
+                <div>• Multifunctional space for relaxation</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
