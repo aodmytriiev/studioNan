@@ -16,7 +16,7 @@ export default function AboutSection() {
                 <img 
                   src={logoPath} 
                   alt="Studio Nan Logo" 
-                  className="h-24 w-auto flex-shrink-0"
+                  className="h-72 w-auto flex-shrink-0"
                 />
               </div>
             </div>
