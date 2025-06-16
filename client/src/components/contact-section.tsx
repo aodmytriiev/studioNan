@@ -98,7 +98,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-charcoal">Email</div>
-                    <div className="text-medium-gray">hello@nidanstudio.com</div>
+                    <div className="text-medium-gray">hello@studionan.com</div>
                   </div>
                 </div>
                 
@@ -224,9 +224,10 @@ export default function ContactSection() {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="residential">Residential Design</SelectItem>
-                          <SelectItem value="commercial">Commercial Design</SelectItem>
-                          <SelectItem value="renovation">Renovation</SelectItem>
+                          <SelectItem value="small-space">Small Space Design</SelectItem>
                           <SelectItem value="consultation">Design Consultation</SelectItem>
+                          <SelectItem value="furniture-styling">Furniture & Styling</SelectItem>
+                          <SelectItem value="natural-lighting">Natural Lighting</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />

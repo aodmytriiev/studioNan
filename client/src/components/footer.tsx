@@ -32,10 +32,10 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
               <li><a href="#" className="hover:text-gold transition-colors duration-300">Residential Design</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors duration-300">Commercial Design</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors duration-300">Small Space Design</a></li>
               <li><a href="#" className="hover:text-gold transition-colors duration-300">Design Consultation</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors duration-300">Renovation Design</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors duration-300">Lighting Design</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors duration-300">Natural Lighting</a></li>
+              <li><a href="#" className="hover:text-gold transition-colors duration-300">Furniture & Styling</a></li>
             </ul>
           </div>
           
@@ -45,13 +45,13 @@ export default function Footer() {
               <li>123 Design District</li>
               <li>New York, NY 10001</li>
               <li className="pt-2">(555) 123-4567</li>
-              <li>hello@nidanstudio.com</li>
+              <li>hello@studionan.com</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Nidan Studio. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 Studio Nan. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>
