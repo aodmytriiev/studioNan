@@ -25,7 +25,7 @@ export default function HeroSection() {
         <p className="text-xl md:text-2xl mb-8 font-light fade-in">
           studio Nan. creates warm, natural environments that blend midcentury, Scandinavian, and Japandi aesthetics for comfortable, mindful living.
         </p>
-        <div className="space-x-4 fade-in">
+        <div className="space-x-8 fade-in">
           <button 
             onClick={() => scrollToSection('portfolio')}
             className="bg-gold text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all duration-300 inline-block"
