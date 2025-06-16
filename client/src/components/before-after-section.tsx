@@ -1,7 +1,7 @@
 import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
-import floorPlan from "@assets/SMALL FLOOR PLAN_1750108371634.pdf";
+import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
 export default function FeaturedProjectSection() {
