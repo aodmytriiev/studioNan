@@ -89,7 +89,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-charcoal">Email</div>
-                    <div className="text-medium-gray">nana8kawmaura@gmail.com</div>
+                    <div className="text-medium-gray">nana8kawamura@gmail.com</div>
                   </div>
                 </div>
                 
