@@ -6,12 +6,12 @@ export default function FeaturedProjectSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h3 className="text-gold text-lg font-medium mb-2">Featured Project</h3>
+          <h3 className="text-gold text-lg font-medium mb-2">Featured Projects</h3>
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
             Never Too Small
           </h2>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-            A 708 square feet home designed for a couple in their 30s, featuring a serene retreat room that embodies our natural, cozy aesthetic.
+            A 708 square feet home designed for a couple in their 30s. Explore different rooms of this cozy project that embodies our natural, midcentury-Japandi aesthetic.
           </p>
         </div>
         
