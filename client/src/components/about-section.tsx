@@ -19,18 +19,7 @@ export default function AboutSection() {
               We believe in designing spaces that nurture well-being and connection with nature. Every project focuses on creating cozy environments that feel both timeless and contemporary, using sustainable materials and thoughtful spatial planning to enhance daily living.
             </p>
           </div>
-          <div className="space-y-6">
-            <img 
-              src={newProjectImage} 
-              alt="Studio Nan interior design project showcasing natural materials and clean lines" 
-              className="rounded-lg shadow-lg w-full h-auto hover-scale" 
-            />
-            <img 
-              src={newProjectImage} 
-              alt="Studio Nan workspace and design process" 
-              className="rounded-lg shadow-lg w-full h-auto hover-scale" 
-            />
-          </div>
+
         </div>
       </div>
     </section>

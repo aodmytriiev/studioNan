@@ -71,14 +71,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div>
-              <div className="flex items-center mb-6">
-                <img 
-                  src={profileImage} 
-                  alt="Studio Nan Designer" 
-                  className="w-16 h-16 rounded-full object-cover mr-4 shadow-lg" 
-                />
-                <h3 className="text-2xl font-playfair font-bold text-charcoal">Get in Touch</h3>
-              </div>
+              <h3 className="text-2xl font-playfair font-bold text-charcoal mb-6">Get in Touch</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="text-gold text-xl mr-4 mt-1">
