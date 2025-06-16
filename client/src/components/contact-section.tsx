@@ -75,21 +75,11 @@ export default function ContactSection() {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="text-gold text-xl mr-4 mt-1">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-charcoal">Studio Address</div>
-                    <div className="text-medium-gray">123 Design District<br />New York, NY 10001</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="text-gold text-xl mr-4 mt-1">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-semibold text-charcoal">Phone</div>
-                    <div className="text-medium-gray">(555) 123-4567</div>
+                    <div className="text-medium-gray">647-621-3972</div>
                   </div>
                 </div>
                 
@@ -99,7 +89,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-charcoal">Email</div>
-                    <div className="text-medium-gray">hello@studionan.com</div>
+                    <div className="text-medium-gray">nana8kawmaura@gmail.com</div>
                   </div>
                 </div>
                 
@@ -118,7 +108,7 @@ export default function ContactSection() {
             <div>
               <h4 className="text-lg font-semibold text-charcoal mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
+                <a href="https://instagram.com/stusio.nan__" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a href="#" className="text-gold hover:text-charcoal transition-colors duration-300 text-xl">
