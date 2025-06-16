@@ -8,17 +8,17 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <h3 className="text-gold text-lg font-medium mb-2">About Studio</h3>
-              <div className="flex items-center gap-8">
-                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal">
-                  Cozy, Natural Interiors for Modern Living
-                </h2>
+              <div className="flex justify-center mb-6">
                 <img 
                   src={logoPath} 
                   alt="Studio Nan Logo" 
-                  className="h-72 w-auto flex-shrink-0"
+                  className="h-32 w-auto"
                 />
               </div>
+              <h3 className="text-gold text-lg font-medium mb-2">About Studio</h3>
+              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
+                Cozy, Natural Interiors for Modern Living
+              </h2>
             </div>
             <p className="text-lg text-medium-gray leading-relaxed">
               Studio Nan specializes in creating warm, inviting residential spaces that embrace the harmony of midcentury modern, Scandinavian simplicity, and Japandi minimalism. Our design philosophy centers on natural materials, clean lines, and functional beauty.
