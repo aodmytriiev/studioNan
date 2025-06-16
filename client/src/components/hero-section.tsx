@@ -18,10 +18,10 @@ export default function HeroSection() {
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 fade-in">
           Transforming Spaces,<br />
-          <span className="text-gold">Enriching Lives</span>
+          <span className="text-gold">Creating Stories</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-light fade-in">
-          Award-winning interior design studio creating bespoke, luxurious environments that reflect your unique style and elevate your everyday living.
+          Nidan Studio creates bespoke, luxurious environments that reflect your unique style and elevate your everyday living experience.
         </p>
         <div className="space-x-4 fade-in">
           <button 

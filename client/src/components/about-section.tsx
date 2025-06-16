@@ -11,7 +11,7 @@ export default function AboutSection() {
               </h2>
             </div>
             <p className="text-lg text-medium-gray leading-relaxed">
-              With over 15 years of experience in luxury interior design, Luxe Interiors has established itself as a premier design studio specializing in residential and commercial spaces. Our philosophy centers on creating environments that seamlessly blend functionality with aesthetic beauty.
+              With over 15 years of experience in luxury interior design, Nidan Studio has established itself as a premier design studio specializing in residential and commercial spaces. Our philosophy centers on creating environments that seamlessly blend functionality with aesthetic beauty.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">
               We believe that great design tells a story. Every project begins with understanding our clients' lifestyle, preferences, and dreams, allowing us to create spaces that are not only visually stunning but deeply personal and meaningful.

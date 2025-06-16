@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoPath from "@assets/logo_1750096917228.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-playfair font-bold text-charcoal">Luxe Interiors</h1>
+            <img 
+              src={logoPath} 
+              alt="nidan studio" 
+              className="h-10 w-auto"
+            />
           </div>
           
           {/* Desktop Navigation */}
@@ -34,9 +39,6 @@ export default function Navigation() {
               </button>
               <button onClick={() => scrollToSection('portfolio')} className="text-charcoal hover:text-gold transition-colors duration-300">
                 Portfolio
-              </button>
-              <button onClick={() => scrollToSection('testimonials')} className="text-charcoal hover:text-gold transition-colors duration-300">
-                Testimonials
               </button>
               <button onClick={() => scrollToSection('contact')} className="bg-gold text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300">
                 Contact
@@ -70,9 +72,6 @@ export default function Navigation() {
               </button>
               <button onClick={() => scrollToSection('portfolio')} className="block w-full text-left px-3 py-2 text-charcoal hover:text-gold transition-colors duration-300">
                 Portfolio
-              </button>
-              <button onClick={() => scrollToSection('testimonials')} className="block w-full text-left px-3 py-2 text-charcoal hover:text-gold transition-colors duration-300">
-                Testimonials
               </button>
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-3 py-2 bg-gold text-white rounded-full mx-3 mt-2 text-center hover:bg-opacity-90 transition-all duration-300">
                 Contact
