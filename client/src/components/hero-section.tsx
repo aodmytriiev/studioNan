@@ -1,3 +1,5 @@
+import newProjectImage from "@assets/Enscape_2025-06-15-15-02-02_1750100675814.png";
+
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -11,7 +13,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080')"
+          backgroundImage: `url('${newProjectImage}')`
         }}
       />
       <div className="absolute inset-0 bg-black bg-opacity-40" />

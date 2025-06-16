@@ -1,3 +1,5 @@
+import newProjectImage from "@assets/Enscape_2025-06-15-15-02-02_1750100675814.png";
+
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-warm-white">
@@ -19,13 +21,13 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6">
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Interior designer at work" 
+              src={newProjectImage} 
+              alt="Studio Nan interior design project showcasing natural materials and clean lines" 
               className="rounded-lg shadow-lg w-full h-auto hover-scale" 
             />
             <img 
-              src="https://images.unsplash.com/photo-1541123603104-512919d6a96c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-              alt="Design studio workspace" 
+              src={newProjectImage} 
+              alt="Studio Nan workspace and design process" 
               className="rounded-lg shadow-lg w-full h-auto hover-scale" 
             />
           </div>
