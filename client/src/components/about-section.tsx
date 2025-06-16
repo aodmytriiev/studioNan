@@ -8,13 +8,6 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <div className="flex justify-center mb-6">
-                <img 
-                  src={logoPath} 
-                  alt="Studio Nan Logo" 
-                  className="h-32 w-auto"
-                />
-              </div>
               <h3 className="text-gold text-lg font-medium mb-2">About Studio</h3>
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
                 Cozy, Natural Interiors for Modern Living
