@@ -23,7 +23,7 @@ export default function HeroSection() {
           <span className="text-gold">Natural Living</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-light fade-in">
-          Studio Nan creates warm, natural environments that blend midcentury, Scandinavian, and Japandi aesthetics for comfortable, mindful living.
+          studio Nan. creates warm, natural environments that blend midcentury, Scandinavian, and Japandi aesthetics for comfortable, mindful living.
         </p>
         <div className="space-x-4 fade-in">
           <button 

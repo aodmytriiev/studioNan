@@ -14,7 +14,7 @@ export default function AboutSection() {
               </h2>
             </div>
             <p className="text-lg text-medium-gray leading-relaxed">
-              Studio Nan specializes in creating warm, inviting residential spaces that embrace the harmony of midcentury modern, Scandinavian simplicity, and Japandi minimalism. Our design philosophy centers on natural materials, clean lines, and functional beauty.
+              studio Nan. specializes in creating warm, inviting residential spaces that embrace the harmony of midcentury modern, Scandinavian simplicity, and Japandi minimalism. Our design philosophy centers on natural materials, clean lines, and functional beauty.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">
               We believe in designing spaces that nurture well-being and connection with nature. Every project focuses on creating cozy environments that feel both timeless and contemporary, using sustainable materials and thoughtful spatial planning to enhance daily living.
