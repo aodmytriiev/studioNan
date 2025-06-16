@@ -55,17 +55,19 @@ export default function FeaturedProjectSection() {
                 <img 
                   src={floorPlan} 
                   alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
-                  className="rounded-lg shadow-lg w-80 h-96 object-cover" 
+                  className="rounded-lg shadow-lg w-80 h-96 object-cover cursor-pointer hover:shadow-xl transition-shadow duration-300" 
+                  onClick={() => window.open(floorPlan, '_blank')}
                 />
-                <p className="text-xs text-medium-gray text-center w-80">Architectural drawings with measurements</p>
+                <p className="text-xs text-medium-gray text-center w-80">Architectural drawings with measurements (click to enlarge)</p>
               </div>
               <div className="space-y-2">
                 <img 
                   src={floorPlan3D} 
                   alt="Never Too Small - 3D floor plan visualization showing furniture layout and spatial relationships" 
-                  className="rounded-lg shadow-lg w-80 h-96 object-cover" 
+                  className="rounded-lg shadow-lg w-80 h-96 object-cover cursor-pointer hover:shadow-xl transition-shadow duration-300" 
+                  onClick={() => window.open(floorPlan3D, '_blank')}
                 />
-                <p className="text-xs text-medium-gray text-center w-80">3D visualization with furniture layout</p>
+                <p className="text-xs text-medium-gray text-center w-80">3D visualization with furniture layout (click to enlarge)</p>
               </div>
             </div>
           </div>
