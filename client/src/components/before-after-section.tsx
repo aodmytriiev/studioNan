@@ -1,6 +1,7 @@
 import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
+import floorPlan from "@assets/floor plan_1750101674679.png";
 
 export default function FeaturedProjectSection() {
   return (
@@ -41,6 +42,37 @@ export default function FeaturedProjectSection() {
             <p className="text-lg text-medium-gray leading-relaxed max-w-4xl mx-auto text-center">
               This compact home demonstrates our expertise in small space design, featuring a serene retreat room that maximizes natural light and incorporates warm wood elements with minimalist furniture for comfortable, mindful living.
             </p>
+          </div>
+        </div>
+
+        {/* Floor Plan */}
+        <div className="mb-20">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Floor Plan</h3>
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="space-y-4">
+              <img 
+                src={floorPlan} 
+                alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Detailed floor plan showcasing efficient space utilization across two levels</p>
+            </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Layout Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Open-plan living and dining area</div>
+                <div>• Multi-level design maximizing vertical space</div>
+                <div>• Efficient kitchen with integrated storage</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Private retreat room with skylights</div>
+                <div>• Compact bathroom with clever layout</div>
+                <div>• Outdoor balcony extending living space</div>
+              </div>
+            </div>
           </div>
         </div>
 
