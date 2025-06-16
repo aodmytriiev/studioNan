@@ -51,21 +51,21 @@ export default function FeaturedProjectSection() {
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Floor Plan</h3>
           <div className="max-w-5xl mx-auto mb-8">
             <div className="flex gap-6 justify-center">
-              <div className="space-y-2 max-w-md">
+              <div className="space-y-2">
                 <img 
                   src={floorPlan} 
                   alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
-                  className="rounded-lg shadow-lg w-full h-auto" 
+                  className="rounded-lg shadow-lg w-80 h-96 object-cover" 
                 />
-                <p className="text-xs text-medium-gray text-center">Architectural drawings with measurements</p>
+                <p className="text-xs text-medium-gray text-center w-80">Architectural drawings with measurements</p>
               </div>
-              <div className="space-y-2 max-w-md">
+              <div className="space-y-2">
                 <img 
                   src={floorPlan3D} 
                   alt="Never Too Small - 3D floor plan visualization showing furniture layout and spatial relationships" 
-                  className="rounded-lg shadow-lg w-full h-auto" 
+                  className="rounded-lg shadow-lg w-80 h-96 object-cover" 
                 />
-                <p className="text-xs text-medium-gray text-center">3D visualization with furniture layout</p>
+                <p className="text-xs text-medium-gray text-center w-80">3D visualization with furniture layout</p>
               </div>
             </div>
           </div>
