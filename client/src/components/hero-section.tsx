@@ -17,11 +17,11 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black bg-opacity-40" />
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 fade-in">
-          Transforming Spaces,<br />
-          <span className="text-gold">Creating Stories</span>
+          Cozy Spaces,<br />
+          <span className="text-gold">Natural Living</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-light fade-in">
-          Nidan Studio creates bespoke, luxurious environments that reflect your unique style and elevate your everyday living experience.
+          Studio Nan creates warm, natural environments that blend midcentury, Scandinavian, and Japandi aesthetics for comfortable, mindful living.
         </p>
         <div className="space-x-4 fade-in">
           <button 

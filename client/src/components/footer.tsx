@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-playfair font-bold mb-4">Nidan Studio</h3>
+            <h3 className="text-3xl font-playfair font-bold mb-4">Studio Nan</h3>
             <p className="text-gray-300 mb-6 max-w-md">
-              Creating extraordinary spaces that reflect your unique style and enhance your everyday living experience through thoughtful design and meticulous attention to detail.
+              Creating cozy, natural environments that blend midcentury modern, Scandinavian, and Japandi aesthetics for comfortable, mindful living.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gold hover:text-white transition-colors duration-300 text-xl">

@@ -4,67 +4,56 @@ const services = [
   {
     icon: Home,
     title: "Residential Design",
-    description: "Complete home transformations including living rooms, bedrooms, kitchens, and bathrooms with personalized design solutions.",
+    description: "Cozy home transformations focusing on natural materials, midcentury modern, Scandinavian, and Japandi aesthetics for comfortable living.",
     features: [
-      "Space Planning & Layout",
-      "Color & Material Selection", 
-      "Custom Furniture Design",
-      "Lighting Design"
-    ]
-  },
-  {
-    icon: Building,
-    title: "Commercial Design",
-    description: "Professional spaces that enhance productivity and brand identity for offices, restaurants, and retail environments.",
-    features: [
-      "Office Space Planning",
-      "Brand Integration",
-      "Retail Environment Design",
-      "Hospitality Interiors"
+      "Natural Material Selection",
+      "Scandinavian-Japandi Fusion", 
+      "Midcentury Modern Elements",
+      "Cozy Space Planning"
     ]
   },
   {
     icon: Palette,
     title: "Design Consultation",
-    description: "Expert guidance and strategic planning to help you achieve your design goals within budget and timeline.",
+    description: "Expert guidance for creating warm, natural environments that blend functionality with mindful aesthetics.",
     features: [
-      "Design Strategy",
-      "Budget Planning",
-      "Vendor Coordination",
-      "Project Management"
+      "Style Direction",
+      "Natural Color Palettes",
+      "Sustainable Material Guidance",
+      "Space Wellness Planning"
     ]
   },
   {
     icon: Sofa,
     title: "Furniture & Styling",
-    description: "Curated furniture selection and styling services to complete your space with perfect finishing touches.",
+    description: "Curated selection of natural, sustainable furniture and accessories that embody cozy, minimalist living.",
     features: [
-      "Furniture Sourcing",
-      "Art & Accessory Selection",
-      "Styling & Staging",
-      "Installation Services"
+      "Natural Wood Furniture",
+      "Textile & Plant Selection",
+      "Minimalist Styling",
+      "Cozy Arrangement"
     ]
   },
   {
     icon: Hammer,
-    title: "Renovation Design",
-    description: "Complete renovation planning and design for spaces requiring structural changes and major updates.",
+    title: "Small Space Design",
+    description: "Specialized in maximizing small spaces with clever storage solutions and multi-functional design approaches.",
     features: [
-      "Renovation Planning",
-      "Contractor Coordination",
-      "Material Specification",
-      "Timeline Management"
+      "Space Optimization",
+      "Multi-functional Furniture",
+      "Storage Solutions",
+      "Flow Enhancement"
     ]
   },
   {
     icon: Lightbulb,
-    title: "Lighting Design",
-    description: "Specialized lighting solutions that enhance ambiance and functionality throughout your space.",
+    title: "Natural Lighting",
+    description: "Warm, natural lighting solutions that create cozy atmospheres and enhance the connection with nature.",
     features: [
-      "Lighting Plans",
-      "Fixture Selection",
-      "Smart Home Integration",
-      "Energy Efficiency"
+      "Warm Light Planning",
+      "Natural Light Optimization",
+      "Pendant & Table Lamps",
+      "Ambient Lighting"
     ]
   }
 ];

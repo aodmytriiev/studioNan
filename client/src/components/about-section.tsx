@@ -7,29 +7,15 @@ export default function AboutSection() {
             <div>
               <h3 className="text-gold text-lg font-medium mb-2">About Studio</h3>
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
-                Creating Timeless Interiors with Contemporary Elegance
+                Cozy, Natural Interiors for Modern Living
               </h2>
             </div>
             <p className="text-lg text-medium-gray leading-relaxed">
-              With over 15 years of experience in luxury interior design, Nidan Studio has established itself as a premier design studio specializing in residential and commercial spaces. Our philosophy centers on creating environments that seamlessly blend functionality with aesthetic beauty.
+              Studio Nan specializes in creating warm, inviting residential spaces that embrace the harmony of midcentury modern, Scandinavian simplicity, and Japandi minimalism. Our design philosophy centers on natural materials, clean lines, and functional beauty.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">
-              We believe that great design tells a story. Every project begins with understanding our clients' lifestyle, preferences, and dreams, allowing us to create spaces that are not only visually stunning but deeply personal and meaningful.
+              We believe in designing spaces that nurture well-being and connection with nature. Every project focuses on creating cozy environments that feel both timeless and contemporary, using sustainable materials and thoughtful spatial planning to enhance daily living.
             </p>
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-charcoal">200+</div>
-                <div className="text-medium-gray">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-charcoal">15+</div>
-                <div className="text-medium-gray">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-playfair font-bold text-charcoal">50+</div>
-                <div className="text-medium-gray">Design Awards</div>
-              </div>
-            </div>
           </div>
           <div className="space-y-6">
             <img 
