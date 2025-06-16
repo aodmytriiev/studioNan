@@ -16,7 +16,7 @@ export default function HeroSection() {
       />
       <div className="absolute inset-0 bg-black bg-opacity-40" />
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 fade-in">
+        <h1 className="text-5xl md:text-7xl font-poppins font-bold mb-6 fade-in">
           Cozy Spaces,<br />
           <span className="text-gold">Natural Living</span>
         </h1>
