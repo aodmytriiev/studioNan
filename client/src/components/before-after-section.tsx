@@ -1,5 +1,6 @@
 import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
+import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
 
 export default function FeaturedProjectSection() {
   return (
@@ -77,6 +78,37 @@ export default function FeaturedProjectSection() {
                 <div>• Minimalist furniture with clean lines</div>
                 <div>• Integration of plants for biophilic design</div>
                 <div>• Multifunctional space for relaxation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Living Room Photos */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Living Room</h3>
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="space-y-4">
+              <img 
+                src={livingRoomImage} 
+                alt="Never Too Small - Living room with exposed brick fireplace and multi-level design" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Open-plan living area featuring exposed brick accent wall with built-in fireplace</p>
+            </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Design Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Exposed brick accent wall for texture</div>
+                <div>• Built-in electric fireplace for ambiance</div>
+                <div>• Multi-level design maximizing space</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Floating shelves for display and storage</div>
+                <div>• Neutral sectional sofa with warm tones</div>
+                <div>• Glass stair railings maintaining openness</div>
               </div>
             </div>
           </div>
