@@ -1,7 +1,7 @@
 import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
-import floorPlan from "@assets/floor plan_1750101674679.png";
+import floorPlan from "@assets/Screenshot 2025-06-16 152216_1750101857121.png";
 
 export default function FeaturedProjectSection() {
   return (
@@ -55,7 +55,7 @@ export default function FeaturedProjectSection() {
                 alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
                 className="rounded-lg shadow-lg w-full h-auto" 
               />
-              <p className="text-sm text-medium-gray text-center">Detailed floor plan showcasing efficient space utilization across two levels</p>
+              <p className="text-sm text-medium-gray text-center">Professional architectural drawings with precise measurements and room specifications</p>
             </div>
           </div>
           
