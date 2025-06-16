@@ -45,13 +45,13 @@ export default function Footer() {
               <li>123 Design District</li>
               <li>New York, NY 10001</li>
               <li className="pt-2">(555) 123-4567</li>
-              <li>hello@luxeinteriors.com</li>
+              <li>hello@nidanstudio.com</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Luxe Interiors. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 Nidan Studio. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

@@ -23,8 +23,8 @@ export default function ContactSection() {
       lastName: "",
       email: "",
       phone: "",
-      projectType: "",
-      budget: "",
+      projectType: undefined,
+      budget: undefined,
       message: "",
     },
   });
@@ -98,7 +98,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="font-semibold text-charcoal">Email</div>
-                    <div className="text-medium-gray">hello@luxeinteriors.com</div>
+                    <div className="text-medium-gray">hello@nidanstudio.com</div>
                   </div>
                 </div>
                 
