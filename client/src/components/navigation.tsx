@@ -21,7 +21,7 @@ export default function Navigation() {
             <img 
               src={logoPath} 
               alt="Studio Nan" 
-              className="h-20 w-auto"
+              className="h-30 w-auto"
             />
           </div>
           
