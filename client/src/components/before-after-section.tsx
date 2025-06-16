@@ -2,6 +2,7 @@ import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png"
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 152216_1750101857121.png";
+import floorPlan3D from "@assets/image_1750101947872.png";
 
 export default function FeaturedProjectSection() {
   return (
@@ -49,13 +50,23 @@ export default function FeaturedProjectSection() {
         <div className="mb-20">
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Floor Plan</h3>
           <div className="max-w-4xl mx-auto mb-8">
-            <div className="space-y-4">
-              <img 
-                src={floorPlan} 
-                alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
-                className="rounded-lg shadow-lg w-full h-auto" 
-              />
-              <p className="text-sm text-medium-gray text-center">Professional architectural drawings with precise measurements and room specifications</p>
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <img 
+                  src={floorPlan} 
+                  alt="Never Too Small - Complete floor plan showing layout of 708 sq ft home" 
+                  className="rounded-lg shadow-lg w-full h-auto" 
+                />
+                <p className="text-sm text-medium-gray text-center">Professional architectural drawings with precise measurements and room specifications</p>
+              </div>
+              <div className="space-y-4">
+                <img 
+                  src={floorPlan3D} 
+                  alt="Never Too Small - 3D floor plan visualization showing furniture layout and spatial relationships" 
+                  className="rounded-lg shadow-lg w-full h-auto" 
+                />
+                <p className="text-sm text-medium-gray text-center">3D visualization showcasing furniture placement and spatial flow</p>
+              </div>
             </div>
           </div>
           
