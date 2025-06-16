@@ -6,7 +6,7 @@ export default function AboutSection() {
           <div className="space-y-8">
             <div>
               <h3 className="text-gold text-lg font-medium mb-2">About Studio</h3>
-              <h2 className="text-4xl md:text-5xl font-poppins font-bold text-charcoal mb-6">
+              <h2 className="text-4xl md:text-5xl font-nunito font-bold text-charcoal mb-6">
                 Cozy, Natural Interiors for Modern Living
               </h2>
             </div>

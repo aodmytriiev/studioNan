@@ -41,7 +41,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-gold text-lg font-medium mb-2">Portfolio</h3>
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-charcoal mb-6">
             Featured Projects
           </h2>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ export default function PortfolioSection() {
             />
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
               <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="text-xl font-playfair font-bold mb-2">{portfolioItems[0].title}</h3>
+                <h3 className="text-xl font-poppins font-bold mb-2">{portfolioItems[0].title}</h3>
                 <p className="text-sm capitalize">{portfolioItems[0].category} • {portfolioItems[0].location}</p>
                 <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>
               </div>

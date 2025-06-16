@@ -64,7 +64,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-gold text-lg font-medium mb-2">Our Services</h3>
-          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-nunito font-bold text-charcoal mb-6">
             Comprehensive Design Solutions
           </h2>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto">
@@ -78,7 +78,7 @@ export default function ServicesSection() {
               <div className="text-gold text-4xl mb-6">
                 <service.icon className="w-10 h-10" />
               </div>
-              <h3 className="text-2xl font-poppins font-bold text-charcoal mb-4">{service.title}</h3>
+              <h3 className="text-2xl font-nunito font-bold text-charcoal mb-4">{service.title}</h3>
               <p className="text-medium-gray mb-6">{service.description}</p>
               <ul className="text-medium-gray space-y-2">
                 {service.features.map((feature, featureIndex) => (

@@ -59,7 +59,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h3 className="text-gold text-lg font-medium mb-2">Contact</h3>
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6">
+          <h2 className="text-4xl md:text-5xl font-poppins font-bold text-charcoal mb-6">
             Start Your Design Journey
           </h2>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto">
