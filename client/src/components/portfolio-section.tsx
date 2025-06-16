@@ -1,51 +1,49 @@
 import { useState } from "react";
 
+import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
+
 const portfolioItems = [
   {
+    image: retreatRoomImage,
+    title: "Never Too Small",
+    category: "residential",
+    location: "708 sq ft",
+    featured: true,
+    description: "Compact home for couple in 30s with natural materials and Japandi-Scandinavian fusion"
+  },
+  {
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Modern Penthouse",
+    title: "Cozy Modern Home",
     category: "residential",
     location: "New York"
   },
   {
     image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500",
-    title: "Luxury Townhouse",
+    title: "Natural Living Space",
     category: "residential",
     location: "Los Angeles"
   },
   {
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450",
-    title: "Designer Kitchen",
+    title: "Minimalist Kitchen",
     category: "residential",
     location: "Miami"
   },
   {
     image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Master Suite",
+    title: "Serene Bedroom",
     category: "residential",
     location: "Chicago"
   },
   {
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=350",
-    title: "Tech Headquarters",
-    category: "commercial",
-    location: "San Francisco"
-  },
-  {
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
-    title: "Fine Dining Restaurant",
-    category: "commercial",
-    location: "Boston"
-  },
-  {
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=450",
-    title: "Victorian Renovation",
+    title: "Small Space Renovation",
     category: "renovation",
     location: "Boston"
   },
   {
     image: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=500",
-    title: "Spa Bathroom",
+    title: "Natural Bathroom",
     category: "residential",
     location: "Seattle"
   }
@@ -65,6 +63,20 @@ export default function PortfolioSection() {
     }
   };
 
+  const scrollToFeaturedProject = () => {
+    // Scroll to the next section after portfolio which contains the featured project
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection && portfolioSection.nextElementSibling) {
+      portfolioSection.nextElementSibling.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleProjectClick = (item: any) => {
+    if (item.featured && item.title === "Never Too Small") {
+      scrollToFeaturedProject();
+    }
+  };
+
   return (
     <section id="portfolio" className="py-20 bg-warm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +86,7 @@ export default function PortfolioSection() {
             Featured Projects
           </h2>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto">
-            Explore our curated collection of interior design projects showcasing our expertise across residential and commercial spaces.
+            Explore our curated collection of cozy, natural residential spaces showcasing midcentury modern, Scandinavian, and Japandi design aesthetics.
           </p>
         </div>
         
@@ -102,16 +114,6 @@ export default function PortfolioSection() {
               Residential
             </button>
             <button 
-              onClick={() => setActiveFilter("commercial")}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                activeFilter === "commercial" 
-                  ? "bg-gold text-white" 
-                  : "text-charcoal hover:bg-gold hover:text-white"
-              }`}
-            >
-              Commercial
-            </button>
-            <button 
               onClick={() => setActiveFilter("renovation")}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                 activeFilter === "renovation" 
@@ -119,7 +121,7 @@ export default function PortfolioSection() {
                   : "text-charcoal hover:bg-gold hover:text-white"
               }`}
             >
-              Renovation
+              Small Spaces
             </button>
           </div>
         </div>
@@ -127,7 +129,11 @@ export default function PortfolioSection() {
         {/* Portfolio Grid */}
         <div className="masonry">
           {filteredItems.map((item, index) => (
-            <div key={index} className="masonry-item relative group cursor-pointer">
+            <div 
+              key={index} 
+              className="masonry-item relative group cursor-pointer"
+              onClick={() => handleProjectClick(item)}
+            >
               <img 
                 src={item.image} 
                 alt={item.title} 
@@ -137,6 +143,9 @@ export default function PortfolioSection() {
                 <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-xl font-playfair font-bold mb-2">{item.title}</h3>
                   <p className="text-sm capitalize">{item.category} • {item.location}</p>
+                  {item.featured && (
+                    <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>
+                  )}
                 </div>
               </div>
             </div>
