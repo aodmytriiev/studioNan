@@ -36,10 +36,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Design District</li>
-              <li>New York, NY 10001</li>
-              <li className="pt-2">(555) 123-4567</li>
-              <li>hello@studionan.com</li>
+              <li className="pt-2">647-621-3972</li>
+              <li>nana8kawmaura@gmail.com</li>
             </ul>
           </div>
         </div>
