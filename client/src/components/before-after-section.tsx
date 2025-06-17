@@ -1,6 +1,7 @@
 import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
+import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750175670849.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
@@ -130,8 +131,8 @@ export default function FeaturedProjectSection() {
 
         {/* Living Room Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Living Room</h3>
-          <div className="max-w-4xl mx-auto mb-12">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Living Room & Kitchen</h3>
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div className="space-y-4">
               <img 
                 src={livingRoomImage} 
@@ -139,6 +140,14 @@ export default function FeaturedProjectSection() {
                 className="rounded-lg shadow-lg w-full h-auto" 
               />
               <p className="text-sm text-medium-gray text-center">Open-plan living area featuring exposed brick accent wall with built-in fireplace</p>
+            </div>
+            <div className="space-y-4">
+              <img 
+                src={kitchenImage} 
+                alt="Never Too Small - Kitchen with rich wood ceiling and white cabinetry" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Elegant kitchen featuring rich wood ceiling and pristine white cabinetry</p>
             </div>
           </div>
           
@@ -149,11 +158,13 @@ export default function FeaturedProjectSection() {
                 <div>• Exposed brick accent wall for texture</div>
                 <div>• Built-in electric fireplace for ambiance</div>
                 <div>• Multi-level design maximizing space</div>
+                <div>• Rich wood ceiling creating warmth</div>
               </div>
               <div className="space-y-2">
                 <div>• Floating shelves for display and storage</div>
                 <div>• Neutral sectional sofa with warm tones</div>
                 <div>• Glass stair railings maintaining openness</div>
+                <div>• Streamlined white cabinetry with integrated dining</div>
               </div>
             </div>
           </div>

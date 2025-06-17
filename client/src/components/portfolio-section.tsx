@@ -85,35 +85,7 @@ export default function PortfolioSection() {
           </div>
         )}
 
-        {/* Section Divider */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4">Living Room & Kitchen Projects</h3>
-          <div className="w-20 h-1 bg-gold mx-auto"></div>
-        </div>
 
-        {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {otherProjects.map((item, index) => (
-            <div 
-              key={index}
-              className="relative group cursor-pointer"
-              onClick={() => handleProjectClick(item)}
-            >
-              <img 
-                src={item.image} 
-                alt={item.title} 
-                className="w-full h-80 object-cover rounded-lg shadow-lg" 
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
-                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                  <h3 className="text-lg font-playfair font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm capitalize mb-2">{item.category} • {item.location}</p>
-                  <p className="text-xs">{item.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
         
         <div className="text-center mt-12">
           <button 
