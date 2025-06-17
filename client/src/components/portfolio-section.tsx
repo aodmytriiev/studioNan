@@ -7,6 +7,7 @@ import kitchenImage3 from "@assets/Enscape_2025-06-15-15-05-16_1750175028134.png
 import kitchenImage4 from "@assets/Enscape_2025-06-15-15-05-16_1750175148545.png";
 import kitchenImage5 from "@assets/Enscape_2025-06-15-15-05-16_1750175235404.png";
 import kitchenImage6 from "@assets/Enscape_2025-06-15-15-05-16_1750175413919.png";
+import kitchenImage7 from "@assets/Enscape_2025-06-15-15-05-16_1750175536724.png";
 
 const portfolioItems = [
   {
@@ -64,6 +65,14 @@ const portfolioItems = [
     location: "Never Too Small",
     featured: false,
     description: "Beautifully crafted small space featuring rich wood ceiling, clean white kitchen, and integrated seating with natural light"
+  },
+  {
+    image: kitchenImage7,
+    title: "Modern Kitchen & Dining Space",
+    category: "residential",
+    location: "Never Too Small",
+    featured: false,
+    description: "Sophisticated compact design with warm wood ceiling, streamlined white cabinetry, and built-in dining solution"
   }
 ];
 
