@@ -1,4 +1,5 @@
 
+import { useState } from "react";
 
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
@@ -8,6 +9,7 @@ import kitchenImage4 from "@assets/Enscape_2025-06-15-15-05-16_1750175148545.png
 import kitchenImage5 from "@assets/Enscape_2025-06-15-15-05-16_1750175235404.png";
 import kitchenImage6 from "@assets/Enscape_2025-06-15-15-05-16_1750175413919.png";
 import kitchenImage7 from "@assets/Enscape_2025-06-15-15-05-16_1750175536724.png";
+import kitchenImage8 from "@assets/Enscape_2025-06-15-15-05-16_1750175670849.png";
 
 const portfolioItems = [
   {
@@ -21,7 +23,7 @@ const portfolioItems = [
   {
     image: kitchenImage,
     title: "Never Too Small Kitchen",
-    category: "residential",
+    category: "kitchen",
     location: "Kitchen Design",
     featured: false,
     description: "Warm wood ceiling with clean white cabinetry and integrated dining space"
@@ -29,7 +31,7 @@ const portfolioItems = [
   {
     image: kitchenImage2,
     title: "Compact Kitchen Design",
-    category: "residential",
+    category: "kitchen",
     location: "Open Plan Kitchen",
     featured: false,
     description: "Natural wood elements with modern functionality and seamless flow"
@@ -37,7 +39,7 @@ const portfolioItems = [
   {
     image: kitchenImage3,
     title: "Integrated Kitchen Space",
-    category: "residential",
+    category: "kitchen",
     location: "Never Too Small Project",
     featured: false,
     description: "Sophisticated small space design with warm wood and clean lines"
@@ -45,7 +47,7 @@ const portfolioItems = [
   {
     image: kitchenImage4,
     title: "Kitchen Living Integration",
-    category: "residential",
+    category: "kitchen",
     location: "Open Concept",
     featured: false,
     description: "Seamless transition between kitchen and living areas with natural materials"
@@ -53,7 +55,7 @@ const portfolioItems = [
   {
     image: kitchenImage5,
     title: "Never Too Small Kitchen Design",
-    category: "residential",
+    category: "kitchen",
     location: "Compact Living",
     featured: false,
     description: "Stunning wood ceiling design with white cabinetry and integrated dining area featuring warm natural lighting"
@@ -61,7 +63,7 @@ const portfolioItems = [
   {
     image: kitchenImage6,
     title: "Compact Kitchen with Wood Ceiling",
-    category: "residential",
+    category: "kitchen",
     location: "Never Too Small",
     featured: false,
     description: "Beautifully crafted small space featuring rich wood ceiling, clean white kitchen, and integrated seating with natural light"
@@ -69,14 +71,23 @@ const portfolioItems = [
   {
     image: kitchenImage7,
     title: "Modern Kitchen & Dining Space",
-    category: "residential",
+    category: "kitchen",
     location: "Never Too Small",
     featured: false,
     description: "Sophisticated compact design with warm wood ceiling, streamlined white cabinetry, and built-in dining solution"
+  },
+  {
+    image: kitchenImage8,
+    title: "Contemporary Kitchen Design",
+    category: "kitchen",
+    location: "Never Too Small",
+    featured: false,
+    description: "Elegant compact kitchen featuring rich wood ceiling, pristine white cabinetry, and thoughtful space optimization"
   }
 ];
 
 export default function PortfolioSection() {
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -99,6 +110,12 @@ export default function PortfolioSection() {
     }
   };
 
+  const categories = ["all", "residential", "kitchen"];
+  
+  const filteredItems = selectedCategory === "all" 
+    ? portfolioItems 
+    : portfolioItems.filter(item => item.category === selectedCategory);
+
   return (
     <section id="portfolio" className="py-20 bg-warm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -112,27 +129,48 @@ export default function PortfolioSection() {
           </p>
         </div>
         
+        {/* Category Filter */}
+        <div className="flex justify-center mb-12">
+          <div className="flex gap-4 bg-white rounded-full p-2 shadow-lg">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 capitalize ${
+                  selectedCategory === category
+                    ? "bg-gold text-white"
+                    : "text-charcoal hover:bg-gold hover:text-white"
+                }`}
+              >
+                {category === "all" ? "All Projects" : category}
+              </button>
+            ))}
+          </div>
+        </div>
 
-        
         {/* Portfolio Grid */}
-        <div className="flex justify-center">
-          <div 
-            className="relative group cursor-pointer max-w-lg"
-            onClick={() => handleProjectClick(portfolioItems[0])}
-          >
-            <img 
-              src={portfolioItems[0].image} 
-              alt={portfolioItems[0].title} 
-              className="w-full rounded-lg shadow-lg" 
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
-              <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="text-xl font-playfair font-bold mb-2">{portfolioItems[0].title}</h3>
-                <p className="text-sm capitalize">{portfolioItems[0].category} • {portfolioItems[0].location}</p>
-                <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredItems.map((item, index) => (
+            <div 
+              key={index}
+              className="relative group cursor-pointer"
+              onClick={() => handleProjectClick(item)}
+            >
+              <img 
+                src={item.image} 
+                alt={item.title} 
+                className="w-full h-80 object-cover rounded-lg shadow-lg" 
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
+                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                  <h3 className="text-xl font-playfair font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm capitalize mb-2">{item.category} • {item.location}</p>
+                  <p className="text-xs">{item.description}</p>
+                  {item.featured && <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>}
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
         
         <div className="text-center mt-12">
