@@ -10,6 +10,7 @@ import bathroomImage3 from "@assets/Enscape_2025-06-16-12-58-19_1750184073868.pn
 import bathroomImage4 from "@assets/Enscape_2025-06-17-14-43-29_1750185888553.png";
 import bedroomImage1 from "@assets/Enscape_2025-06-17-15-18-55_1750197714651.png";
 import bedroomImage2 from "@assets/Enscape_2025-06-17-15-21-08_1750197718208.png";
+import bedroomImage3 from "@assets/Enscape_2025-06-17-18-24-39_1750199144433.png";
 import workspaceImage1 from "@assets/Enscape_2025-06-17-18-16-37_1750198785849.png";
 import workspaceImage2 from "@assets/Enscape_2025-06-17-18-18-21_1750198789438.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
@@ -283,7 +284,7 @@ export default function FeaturedProjectSection() {
         {/* Bedroom Photos */}
         <div className="mt-20">
           <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Bedroom Design</h3>
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="space-y-4">
               <img 
                 src={bedroomImage1} 
@@ -300,6 +301,14 @@ export default function FeaturedProjectSection() {
               />
               <p className="text-sm text-medium-gray text-center">Glass cube bedroom with integrated storage, pendant lighting, and brick accent wall</p>
             </div>
+            <div className="space-y-4">
+              <img 
+                src={bedroomImage3} 
+                alt="Never Too Small - Bedroom interior with concrete walls and woven pendant light" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Bedroom interior featuring concrete walls, built-in shelving, and natural woven pendant light</p>
+            </div>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -307,15 +316,15 @@ export default function FeaturedProjectSection() {
             <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
               <div className="space-y-2">
                 <div>• Elevated glass cube bedroom design</div>
-                <div>• Multi-level spatial arrangement</div>
-                <div>• Integrated storage solutions</div>
-                <div>• Natural wood frame construction</div>
+                <div>• Raw concrete walls creating industrial warmth</div>
+                <div>• Built-in shelving for books and storage</div>
+                <div>• Natural woven pendant light as focal point</div>
               </div>
               <div className="space-y-2">
-                <div>• Pendant lighting for ambient atmosphere</div>
-                <div>• Brick accent wall for texture contrast</div>
-                <div>• Glass panels maintaining openness</div>
-                <div>• Maximized floor space below bedroom</div>
+                <div>• Multi-level spatial arrangement</div>
+                <div>• Glass panels maintaining visual openness</div>
+                <div>• Integrated storage within glass walls</div>
+                <div>• Minimalist furnishing with quality materials</div>
               </div>
             </div>
           </div>
