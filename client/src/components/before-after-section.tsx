@@ -281,12 +281,12 @@ export default function FeaturedProjectSection() {
         {/* Bedroom Photos */}
         <div className="mt-20">
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bedroom Design</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div className="space-y-4">
               <img 
                 src={bedroomImage1} 
                 alt="Never Too Small - Elevated bedroom with glass enclosure and multi-level design" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-auto" 
               />
               <p className="text-sm text-medium-gray text-center">Elevated bedroom with glass enclosure showcasing multi-level spatial design</p>
             </div>
@@ -294,7 +294,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={bedroomImage2} 
                 alt="Never Too Small - Bedroom glass cube with integrated storage and lighting" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-auto" 
               />
               <p className="text-sm text-medium-gray text-center">Glass cube bedroom with integrated storage, pendant lighting, and brick accent wall</p>
             </div>
