@@ -230,7 +230,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={bathroomImage1} 
                 alt="Never Too Small - Bathroom with wood accent wall and shower area" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-96 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Wood accent wall with integrated storage and rainfall shower</p>
             </div>
@@ -238,7 +238,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={bathroomImage2} 
                 alt="Never Too Small - Compact bathroom vanity with vessel sink" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-96 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Floating vanity with vessel sink and mirror storage</p>
             </div>
@@ -246,7 +246,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={bathroomImage3} 
                 alt="Never Too Small - Full bathroom view with glass shower partition" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-96 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Complete layout with glass partition and efficient space planning</p>
             </div>
@@ -254,7 +254,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={bathroomImage4} 
                 alt="Never Too Small - Bathroom with bathtub and overhead shower system" 
-                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+                className="rounded-lg shadow-lg w-full h-96 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Luxurious bathtub area with overhead rain shower and wood cabinetry</p>
             </div>
