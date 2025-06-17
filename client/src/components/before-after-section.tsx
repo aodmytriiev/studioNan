@@ -10,6 +10,7 @@ import bathroomImage3 from "@assets/Enscape_2025-06-16-12-58-19_1750184073868.pn
 import bathroomImage4 from "@assets/Enscape_2025-06-17-14-43-29_1750185888553.png";
 import bedroomImage1 from "@assets/Enscape_2025-06-17-15-18-55_1750197714651.png";
 import bedroomImage2 from "@assets/Enscape_2025-06-17-15-21-08_1750197718208.png";
+import workspaceImage from "@assets/Enscape_2025-06-17-15-34-46_1750198095835.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
@@ -314,6 +315,39 @@ export default function FeaturedProjectSection() {
                 <div>• Brick accent wall for texture contrast</div>
                 <div>• Glass panels maintaining openness</div>
                 <div>• Maximized floor space below bedroom</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Workspace Photos */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Workspace Design</h3>
+          <div className="flex justify-center mb-12">
+            <div className="space-y-4 max-w-4xl">
+              <img 
+                src={workspaceImage} 
+                alt="Never Too Small - Multi-level workspace with built-in desk and storage" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Multi-level workspace featuring built-in desk, floating shelves, and pendant lighting</p>
+            </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Design Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Built-in workspace with integrated storage</div>
+                <div>• Multi-level design maximizing vertical space</div>
+                <div>• Floating shelves for books and display</div>
+                <div>• Natural wood desk surface and accents</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Pendant lighting for task illumination</div>
+                <div>• Open sight lines maintaining connectivity</div>
+                <div>• Glass railings preserving visual flow</div>
+                <div>• Efficient use of mezzanine level space</div>
               </div>
             </div>
           </div>
