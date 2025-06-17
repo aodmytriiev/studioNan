@@ -2,14 +2,7 @@
 
 
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
-import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
-import kitchenImage2 from "@assets/Enscape_2025-06-15-15-05-16_1750174908806.png";
-import kitchenImage3 from "@assets/Enscape_2025-06-15-15-05-16_1750175028134.png";
-import kitchenImage4 from "@assets/Enscape_2025-06-15-15-05-16_1750175148545.png";
-import kitchenImage5 from "@assets/Enscape_2025-06-15-15-05-16_1750175235404.png";
-import kitchenImage6 from "@assets/Enscape_2025-06-15-15-05-16_1750175413919.png";
-import kitchenImage7 from "@assets/Enscape_2025-06-15-15-05-16_1750175536724.png";
-import kitchenImage8 from "@assets/Enscape_2025-06-15-15-05-16_1750175670849.png";
+import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750175670849.png";
 
 const portfolioItems = [
   {
@@ -23,63 +16,7 @@ const portfolioItems = [
   {
     image: kitchenImage,
     title: "Never Too Small Kitchen",
-    category: "kitchen",
-    location: "Kitchen Design",
-    featured: false,
-    description: "Warm wood ceiling with clean white cabinetry and integrated dining space"
-  },
-  {
-    image: kitchenImage2,
-    title: "Compact Kitchen Design",
-    category: "kitchen",
-    location: "Open Plan Kitchen",
-    featured: false,
-    description: "Natural wood elements with modern functionality and seamless flow"
-  },
-  {
-    image: kitchenImage3,
-    title: "Integrated Kitchen Space",
-    category: "kitchen",
-    location: "Never Too Small Project",
-    featured: false,
-    description: "Sophisticated small space design with warm wood and clean lines"
-  },
-  {
-    image: kitchenImage4,
-    title: "Kitchen Living Integration",
-    category: "kitchen",
-    location: "Open Concept",
-    featured: false,
-    description: "Seamless transition between kitchen and living areas with natural materials"
-  },
-  {
-    image: kitchenImage5,
-    title: "Never Too Small Kitchen Design",
-    category: "kitchen",
-    location: "Compact Living",
-    featured: false,
-    description: "Stunning wood ceiling design with white cabinetry and integrated dining area featuring warm natural lighting"
-  },
-  {
-    image: kitchenImage6,
-    title: "Compact Kitchen with Wood Ceiling",
-    category: "kitchen",
-    location: "Never Too Small",
-    featured: false,
-    description: "Beautifully crafted small space featuring rich wood ceiling, clean white kitchen, and integrated seating with natural light"
-  },
-  {
-    image: kitchenImage7,
-    title: "Modern Kitchen & Dining Space",
-    category: "kitchen",
-    location: "Never Too Small",
-    featured: false,
-    description: "Sophisticated compact design with warm wood ceiling, streamlined white cabinetry, and built-in dining solution"
-  },
-  {
-    image: kitchenImage8,
-    title: "Contemporary Kitchen Design",
-    category: "kitchen",
+    category: "residential",
     location: "Never Too Small",
     featured: false,
     description: "Elegant compact kitchen featuring rich wood ceiling, pristine white cabinetry, and thoughtful space optimization"
