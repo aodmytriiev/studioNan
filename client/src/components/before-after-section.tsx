@@ -140,7 +140,7 @@ export default function FeaturedProjectSection() {
 
         {/* Living Room Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Living Room & Kitchen</h3>
+          <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Living Room & Kitchen</h3>
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div className="space-y-4">
               <img 
@@ -181,7 +181,7 @@ export default function FeaturedProjectSection() {
 
         {/* Porch Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Porch Design</h3>
+          <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Porch Design</h3>
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div className="space-y-4">
               <img 
@@ -222,7 +222,7 @@ export default function FeaturedProjectSection() {
 
         {/* Bathroom Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bathroom Design</h3>
+          <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Bathroom Design</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
             <div className="space-y-4">
               <img 
@@ -281,7 +281,7 @@ export default function FeaturedProjectSection() {
 
         {/* Bedroom Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bedroom Design</h3>
+          <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Bedroom Design</h3>
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
             <div className="space-y-4">
               <img 
@@ -322,7 +322,7 @@ export default function FeaturedProjectSection() {
 
         {/* Workspace Photos */}
         <div className="mt-20">
-          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Workspace Design</h3>
+          <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Workspace Design</h3>
           <div className="flex justify-center mb-12">
             <div className="space-y-4 max-w-4xl">
               <img 
