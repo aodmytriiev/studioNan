@@ -6,6 +6,7 @@ import kitchenImage2 from "@assets/Enscape_2025-06-15-15-05-16_1750174908806.png
 import kitchenImage3 from "@assets/Enscape_2025-06-15-15-05-16_1750175028134.png";
 import kitchenImage4 from "@assets/Enscape_2025-06-15-15-05-16_1750175148545.png";
 import kitchenImage5 from "@assets/Enscape_2025-06-15-15-05-16_1750175235404.png";
+import kitchenImage6 from "@assets/Enscape_2025-06-15-15-05-16_1750175413919.png";
 
 const portfolioItems = [
   {
@@ -55,6 +56,14 @@ const portfolioItems = [
     location: "Compact Living",
     featured: false,
     description: "Stunning wood ceiling design with white cabinetry and integrated dining area featuring warm natural lighting"
+  },
+  {
+    image: kitchenImage6,
+    title: "Compact Kitchen with Wood Ceiling",
+    category: "residential",
+    location: "Never Too Small",
+    featured: false,
+    description: "Beautifully crafted small space featuring rich wood ceiling, clean white kitchen, and integrated seating with natural light"
   }
 ];
 
