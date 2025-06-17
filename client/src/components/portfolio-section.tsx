@@ -3,6 +3,7 @@
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
 import kitchenImage2 from "@assets/Enscape_2025-06-15-15-05-16_1750174908806.png";
+import kitchenImage3 from "@assets/Enscape_2025-06-15-15-05-16_1750175028134.png";
 
 const portfolioItems = [
   {
@@ -28,6 +29,14 @@ const portfolioItems = [
     location: "Open Plan Kitchen",
     featured: false,
     description: "Natural wood elements with modern functionality and seamless flow"
+  },
+  {
+    image: kitchenImage3,
+    title: "Integrated Kitchen Space",
+    category: "residential",
+    location: "Never Too Small Project",
+    featured: false,
+    description: "Sophisticated small space design with warm wood and clean lines"
   }
 ];
 
