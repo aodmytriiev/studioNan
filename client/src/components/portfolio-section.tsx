@@ -1,6 +1,7 @@
 
 
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
+import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
 
 const portfolioItems = [
   {
@@ -10,6 +11,14 @@ const portfolioItems = [
     location: "708 sq ft",
     featured: true,
     description: "Compact home for couple in 30s with natural materials and Japandi-Scandinavian fusion"
+  },
+  {
+    image: kitchenImage,
+    title: "Never Too Small Kitchen",
+    category: "residential",
+    location: "Kitchen Design",
+    featured: false,
+    description: "Warm wood ceiling with clean white cabinetry and integrated dining space"
   }
 ];
 
