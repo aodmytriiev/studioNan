@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+
 
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
@@ -87,8 +87,6 @@ const portfolioItems = [
 ];
 
 export default function PortfolioSection() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -110,11 +108,9 @@ export default function PortfolioSection() {
     }
   };
 
-  const categories = ["all", "residential", "kitchen"];
-  
-  const filteredItems = selectedCategory === "all" 
-    ? portfolioItems 
-    : portfolioItems.filter(item => item.category === selectedCategory);
+  // Show featured project first, then all projects
+  const featuredProject = portfolioItems.find(item => item.featured);
+  const otherProjects = portfolioItems.filter(item => !item.featured);
 
   return (
     <section id="portfolio" className="py-20 bg-warm-white">
@@ -129,28 +125,38 @@ export default function PortfolioSection() {
           </p>
         </div>
         
-        {/* Category Filter */}
-        <div className="flex justify-center mb-12">
-          <div className="flex gap-4 bg-white rounded-full p-2 shadow-lg">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 capitalize ${
-                  selectedCategory === category
-                    ? "bg-gold text-white"
-                    : "text-charcoal hover:bg-gold hover:text-white"
-                }`}
-              >
-                {category === "all" ? "All Projects" : category}
-              </button>
-            ))}
+        {/* Featured Project */}
+        {featuredProject && (
+          <div className="flex justify-center mb-16">
+            <div 
+              className="relative group cursor-pointer max-w-lg"
+              onClick={() => handleProjectClick(featuredProject)}
+            >
+              <img 
+                src={featuredProject.image} 
+                alt={featuredProject.title} 
+                className="w-full rounded-lg shadow-lg" 
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
+                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-xl font-playfair font-bold mb-2">{featuredProject.title}</h3>
+                  <p className="text-sm capitalize">{featuredProject.category} • {featuredProject.location}</p>
+                  <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>
+                </div>
+              </div>
+            </div>
           </div>
+        )}
+
+        {/* Section Divider */}
+        <div className="text-center mb-12">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4">Living Room & Kitchen Projects</h3>
+          <div className="w-20 h-1 bg-gold mx-auto"></div>
         </div>
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item, index) => (
+          {otherProjects.map((item, index) => (
             <div 
               key={index}
               className="relative group cursor-pointer"
@@ -163,10 +169,9 @@ export default function PortfolioSection() {
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 rounded-lg flex items-center justify-center">
                 <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                  <h3 className="text-xl font-playfair font-bold mb-2">{item.title}</h3>
+                  <h3 className="text-lg font-playfair font-bold mb-2">{item.title}</h3>
                   <p className="text-sm capitalize mb-2">{item.category} • {item.location}</p>
                   <p className="text-xs">{item.description}</p>
-                  {item.featured && <p className="text-xs mt-2 bg-gold px-2 py-1 rounded">Click to view details</p>}
                 </div>
               </div>
             </div>
