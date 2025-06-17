@@ -220,38 +220,38 @@ export default function FeaturedProjectSection() {
         {/* Bathroom Photos */}
         <div className="mt-20">
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bathroom Design</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-6xl mx-auto">
-            <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
               <img 
                 src={bathroomImage1} 
                 alt="Never Too Small - Bathroom with wood accent wall and shower area" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
-              <p className="text-xs text-medium-gray text-center">Wood accent wall with integrated storage and rainfall shower</p>
+              <p className="text-sm text-medium-gray text-center">Wood accent wall with integrated storage and rainfall shower</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <img 
                 src={bathroomImage2} 
                 alt="Never Too Small - Compact bathroom vanity with vessel sink" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
-              <p className="text-xs text-medium-gray text-center">Floating vanity with vessel sink and mirror storage</p>
+              <p className="text-sm text-medium-gray text-center">Floating vanity with vessel sink and mirror storage</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <img 
                 src={bathroomImage3} 
                 alt="Never Too Small - Full bathroom view with glass shower partition" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
-              <p className="text-xs text-medium-gray text-center">Complete layout with glass partition and efficient space planning</p>
+              <p className="text-sm text-medium-gray text-center">Complete layout with glass partition and efficient space planning</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-4">
               <img 
                 src={bathroomImage4} 
                 alt="Never Too Small - Bathroom with bathtub and overhead shower system" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
-              <p className="text-xs text-medium-gray text-center">Luxurious bathtub area with overhead rain shower and wood cabinetry</p>
+              <p className="text-sm text-medium-gray text-center">Luxurious bathtub area with overhead rain shower and wood cabinetry</p>
             </div>
           </div>
           
