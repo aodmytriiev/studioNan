@@ -2,6 +2,8 @@ import retreatRoom1 from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png"
 import retreatRoom2 from "@assets/Enscape_2025-06-15-14-51-27_1750097450448.png";
 import livingRoomImage from "@assets/Enscape_2025-06-16-12-48-13_1750100135389.png";
 import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750175670849.png";
+import porchImage1 from "@assets/Enscape_2025-06-17-13-59-16_1750183904327.png";
+import porchImage2 from "@assets/Enscape_2025-06-17-14-05-43_1750183935173.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
@@ -165,6 +167,47 @@ export default function FeaturedProjectSection() {
                 <div>• Neutral sectional sofa with warm tones</div>
                 <div>• Glass stair railings maintaining openness</div>
                 <div>• Streamlined white cabinetry with integrated dining</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Porch Photos */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Porch Design</h3>
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <div className="space-y-4">
+              <img 
+                src={porchImage1} 
+                alt="Never Too Small - Porch with skylight and natural materials" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Covered porch featuring skylight, natural materials, and integrated seating</p>
+            </div>
+            <div className="space-y-4">
+              <img 
+                src={porchImage2} 
+                alt="Never Too Small - Porch dining area with garden views" 
+                className="rounded-lg shadow-lg w-full h-auto" 
+              />
+              <p className="text-sm text-medium-gray text-center">Porch dining area with terrazzo table and views to garden space</p>
+            </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Design Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Overhead skylight for natural lighting</div>
+                <div>• Warm wood framing and beams</div>
+                <div>• Built-in bench seating with cushions</div>
+                <div>• Natural material palette</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Terrazzo dining table integration</div>
+                <div>• Garden views through glass panels</div>
+                <div>• Indoor-outdoor living connection</div>
+                <div>• Textured wall finishes for warmth</div>
               </div>
             </div>
           </div>
