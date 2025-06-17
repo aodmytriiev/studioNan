@@ -7,6 +7,7 @@ import porchImage2 from "@assets/Enscape_2025-06-17-14-05-43_1750183935173.png";
 import bathroomImage1 from "@assets/Enscape_2025-06-16-12-53-42_1750184055626.png";
 import bathroomImage2 from "@assets/Enscape_2025-06-16-12-56-20_1750184061063.png";
 import bathroomImage3 from "@assets/Enscape_2025-06-16-12-58-19_1750184073868.png";
+import bathroomImage4 from "@assets/Enscape_2025-06-17-14-43-29_1750185888553.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
@@ -219,7 +220,7 @@ export default function FeaturedProjectSection() {
         {/* Bathroom Photos */}
         <div className="mt-20">
           <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bathroom Design</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-6xl mx-auto">
             <div className="space-y-3">
               <img 
                 src={bathroomImage1} 
@@ -244,6 +245,14 @@ export default function FeaturedProjectSection() {
               />
               <p className="text-xs text-medium-gray text-center">Complete layout with glass partition and efficient space planning</p>
             </div>
+            <div className="space-y-3">
+              <img 
+                src={bathroomImage4} 
+                alt="Never Too Small - Bathroom with bathtub and overhead shower system" 
+                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+              />
+              <p className="text-xs text-medium-gray text-center">Luxurious bathtub area with overhead rain shower and wood cabinetry</p>
+            </div>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -254,12 +263,14 @@ export default function FeaturedProjectSection() {
                 <div>• Floating vanity maximizing floor space</div>
                 <div>• Vessel sink with modern aesthetics</div>
                 <div>• Wall-mounted toilet for clean lines</div>
+                <div>• Integrated bathtub with sleek design</div>
               </div>
               <div className="space-y-2">
                 <div>• Glass shower partition maintaining openness</div>
-                <div>• Rainfall showerhead and handheld combo</div>
+                <div>• Overhead rain shower system</div>
                 <div>• Built-in storage niches and shelving</div>
                 <div>• Neutral tile palette with wood warmth</div>
+                <div>• Spa-like atmosphere with natural materials</div>
               </div>
             </div>
           </div>
