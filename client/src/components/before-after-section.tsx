@@ -8,6 +8,8 @@ import bathroomImage1 from "@assets/Enscape_2025-06-16-12-53-42_1750184055626.pn
 import bathroomImage2 from "@assets/Enscape_2025-06-16-12-56-20_1750184061063.png";
 import bathroomImage3 from "@assets/Enscape_2025-06-16-12-58-19_1750184073868.png";
 import bathroomImage4 from "@assets/Enscape_2025-06-17-14-43-29_1750185888553.png";
+import bedroomImage1 from "@assets/Enscape_2025-06-17-15-18-55_1750197714651.png";
+import bedroomImage2 from "@assets/Enscape_2025-06-17-15-21-08_1750197718208.png";
 import floorPlan from "@assets/Screenshot 2025-06-16 171454_1750108520344.png";
 import floorPlan3D from "@assets/image_1750101947872.png";
 
@@ -271,6 +273,47 @@ export default function FeaturedProjectSection() {
                 <div>• Built-in storage niches and shelving</div>
                 <div>• Neutral tile palette with wood warmth</div>
                 <div>• Spa-like atmosphere with natural materials</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bedroom Photos */}
+        <div className="mt-20">
+          <h3 className="text-2xl font-playfair font-bold text-charcoal mb-8 text-center">Bedroom Design</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <img 
+                src={bedroomImage1} 
+                alt="Never Too Small - Elevated bedroom with glass enclosure and multi-level design" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+              />
+              <p className="text-sm text-medium-gray text-center">Elevated bedroom with glass enclosure showcasing multi-level spatial design</p>
+            </div>
+            <div className="space-y-4">
+              <img 
+                src={bedroomImage2} 
+                alt="Never Too Small - Bedroom glass cube with integrated storage and lighting" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
+              />
+              <p className="text-sm text-medium-gray text-center">Glass cube bedroom with integrated storage, pendant lighting, and brick accent wall</p>
+            </div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <h4 className="text-xl font-playfair font-bold text-charcoal mb-4 text-center">Design Features</h4>
+            <div className="grid md:grid-cols-2 gap-8 text-medium-gray">
+              <div className="space-y-2">
+                <div>• Elevated glass cube bedroom design</div>
+                <div>• Multi-level spatial arrangement</div>
+                <div>• Integrated storage solutions</div>
+                <div>• Natural wood frame construction</div>
+              </div>
+              <div className="space-y-2">
+                <div>• Pendant lighting for ambient atmosphere</div>
+                <div>• Brick accent wall for texture contrast</div>
+                <div>• Glass panels maintaining openness</div>
+                <div>• Maximized floor space below bedroom</div>
               </div>
             </div>
           </div>
