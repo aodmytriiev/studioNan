@@ -2,6 +2,7 @@
 
 import retreatRoomImage from "@assets/Enscape_2025-06-15-14-45-36_1750097444134.png";
 import kitchenImage from "@assets/Enscape_2025-06-15-15-05-16_1750174768867.png";
+import kitchenImage2 from "@assets/Enscape_2025-06-15-15-05-16_1750174908806.png";
 
 const portfolioItems = [
   {
@@ -19,6 +20,14 @@ const portfolioItems = [
     location: "Kitchen Design",
     featured: false,
     description: "Warm wood ceiling with clean white cabinetry and integrated dining space"
+  },
+  {
+    image: kitchenImage2,
+    title: "Compact Kitchen Design",
+    category: "residential",
+    location: "Open Plan Kitchen",
+    featured: false,
+    description: "Natural wood elements with modern functionality and seamless flow"
   }
 ];
 
