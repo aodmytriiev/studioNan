@@ -184,12 +184,12 @@ export default function FeaturedProjectSection() {
         {/* Porch Photos */}
         <div className="mt-20">
           <h3 className="text-2xl font-playfair font-bold mb-8 text-center" style={{ color: 'hsl(36, 45%, 64.3%)' }}>Porch Design</h3>
-          <div className="grid lg:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
             <div className="space-y-4">
               <img 
                 src={porchImage1} 
                 alt="Never Too Small - Porch with skylight and natural materials" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Covered porch featuring skylight, natural materials, and integrated seating</p>
             </div>
@@ -197,7 +197,7 @@ export default function FeaturedProjectSection() {
               <img 
                 src={porchImage2} 
                 alt="Never Too Small - Porch dining area with garden views" 
-                className="rounded-lg shadow-lg w-full h-64 object-cover" 
+                className="rounded-lg shadow-lg w-full h-80 object-cover" 
               />
               <p className="text-sm text-medium-gray text-center">Porch dining area with terrazzo table and views to garden space</p>
             </div>
