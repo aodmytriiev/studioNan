@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Phone, Mail, Clock, Instagram } from "lucide-react";
@@ -9,16 +8,28 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
-import { insertContactSubmissionSchema, type InsertContactSubmission } from "@shared/schema";
+import { z } from "zod";
 import profileImage from "@assets/pic of me_1750100470021.png";
+
+// Static form schema
+const contactFormSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Please enter a valid email address"),
+  phone: z.string().optional(),
+  projectType: z.string().optional(),
+  budget: z.string().optional(),
+  message: z.string().min(1, "Message is required"),
+});
+
+type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactSection() {
   const { toast } = useToast();
-  const queryClient = useQueryClient();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const form = useForm<InsertContactSubmission>({
-    resolver: zodResolver(insertContactSubmissionSchema),
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -30,29 +41,46 @@ export default function ContactSection() {
     },
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: InsertContactSubmission) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
-    },
-    onSuccess: () => {
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`New Contact Form Submission from ${data.firstName} ${data.lastName}`);
+      const body = encodeURIComponent(
+        `New contact form submission:
+
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Project Type: ${data.projectType || 'Not specified'}
+Budget Range: ${data.budget || 'Not specified'}
+
+Message:
+${data.message}
+
+---
+This message was sent from the Studio Nan website contact form.`
+      );
+      
+      const mailtoLink = `mailto:nana8kawamura@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+      
       toast({
-        title: "Message sent successfully!",
-        description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
+        title: "Opening email client...",
+        description: "Your default email application will open with the message pre-filled.",
       });
+      
       form.reset();
-    },
-    onError: (error: any) => {
+    } catch (error) {
       toast({
-        title: "Failed to send message",
-        description: error.message || "Please try again later.",
+        title: "Error",
+        description: "Please contact us directly at nana8kawamura@gmail.com",
         variant: "destructive",
       });
-    },
-  });
-
-  const onSubmit = (data: InsertContactSubmission) => {
-    contactMutation.mutate(data);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -265,10 +293,10 @@ export default function ContactSection() {
                 
                 <Button 
                   type="submit" 
-                  disabled={contactMutation.isPending}
+                  disabled={isSubmitting}
                   className="w-full bg-gold hover:bg-gold/90 text-white py-4 rounded-lg font-medium text-lg"
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Opening Email..." : "Send Message"}
                 </Button>
               </form>
             </Form>
